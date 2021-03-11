@@ -1,30 +1,34 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import './League.css'
 
 const League = (props) => {
-    // console.log(props.league)
-    //  strLeagueAlternate,
     const { idLeague, strLeague, strSport } = props.league;
-    // console.log(idLeague)
-    // const leagueStyle = {
-    //     border: '1px solid purple',
-    //     margin: '20px',
-    //     padding: '20px',
-    //     borderRadius: '20px'
-    // }
-    // className="leagueStyle"
+    const [eachLeague, setEachLeague] = useState([]);
+    useEffect(() => {
+        const url = `https://www.thesportsdb.com/api/v1/json/1/lookupleague.php?id=${props.league.idLeague}`;
+        fetch(url)
+            .then(res => res.json())
+            .then(data => {
+                setEachLeague(data.leagues[0]);
+            })
+    }, [props.league.idLeague]);
+    const { strBadge } = eachLeague;
+
     return (
         <div class="col">
-            {/* new */}
-            <div className="card mb-4">
-                <img src="..." className="card-img-top" alt="..." />
+            <div className="card mb-4 shadow rounded">
+                <div className="d-flex text-center" style={{paddingTop: "20px"}}>
+                    <div>
+                        <img className='d-flex text-center' src={strBadge} style={{ width: '50%' }} className="card-img-top" alt="..." />
+                    </div>
+                </div>
                 <div className="d-flex text-center">
                     <div className="card-body">
-                        <h5>{strLeague}</h5>
-                        <p>Sports type: {strSport}</p>
+                        <h5 style={{ fontWeight: '700' }}>{strLeague}</h5>
+                        <p style={{ color: 'IndianRed' }}>Sports type: {strSport}</p>
                         <button className="button"><Link style={{ textDecoration: 'none', color: 'white' }} to={`/about/${idLeague}`}>Explore <FontAwesomeIcon icon={faArrowRight} /> </Link></button>
                     </div>
                 </div>

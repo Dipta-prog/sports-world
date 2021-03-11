@@ -10,20 +10,8 @@ import NoMatch from './components/NoMatch/NoMatch';
 import LeagueDetail from './components/League/LeagueDetail/LeagueDetail';
 
 function App() {
-  // const [leagues, setLeagues] = useState([]);
-  // useEffect(() => {
-  //   fetch('https://www.thesportsdb.com/api/v1/json/1/all_leagues.php')
-  //   .then(res => res.json())
-  //   .then(data => {
-  //     setLeagues(data.leagues)
-  //     console.log(data.leagues)}) //setLeagues(data)
-  // }, [])
   return (
     <div>
-      {/* <h1>length {leagues.length}</h1> */}
-      {/* {
-        leagues.map(league => <League league={league}></League>)
-      } */}
       <Router>
         <Switch>
           <Route path="/home">
