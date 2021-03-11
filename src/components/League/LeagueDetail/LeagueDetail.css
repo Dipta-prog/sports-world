@@ -1,0 +1,55 @@
+/* .aboutBanner {
+background-image: url();
+} */
+.genderImage {
+    width: 100%;
+    /* padding-top: 5px; */
+    /* display: inline-block;
+    align-items: center; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+}
+
+.descriptionText {
+    text-align: justify;
+    /* margin: 0;
+    padding: 0; */
+}
+
+.leagueInfo {
+    margin: 0;
+    padding: 0 0 15px 0;
+}
+
+.leagueInfoDiv {
+    padding: 5px 5px 15px 5px;
+}
+
+.socialIcons{
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.socialDiv{
+    height: 60px;
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logoImg{
+    width: 200px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 85px; 
+    align-items: center;
+}
+
+
