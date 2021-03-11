@@ -17,7 +17,7 @@ const Home = () => {
             {/* banner img with project name in center */}
             <div style={bannerStyle}>
             <div className="d-flex align-items-center justify-content-center img-fluid">
-                <h5 style= {{color: 'white'}} className="text-center logoText">Project name in center</h5>
+                <h5 style= {{color: 'white'}} className="text-center logoText">Sports World</h5>
             </div>
             </div>
             <div className="container">
