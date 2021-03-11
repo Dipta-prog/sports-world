@@ -20,7 +20,7 @@ const League = (props) => {
     return (
         <div class="col">
             <div className="card mb-4 shadow rounded">
-                <div className="d-flex text-center" style={{paddingTop: "20px"}}>
+                <div className="d-flex text-center" style={{ paddingTop: "20px" }}>
                     <div>
                         <img className='d-flex text-center' src={strBadge} style={{ width: '50%' }} className="card-img-top" alt="..." />
                     </div>

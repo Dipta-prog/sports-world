@@ -25,12 +25,12 @@ const LeagueDetail = () => {
     const bannerStyle = { backgroundImage: `url(${strFanart2})`, height: '62vh', backgroundRepeat: 'no-repeat', backgroundSize: '100% 450px', opacity: '1' };
 
     let ConditionalGenderImage;
-    if(strGender!=="Male"){
+    if (strGender !== "Male") {
         ConditionalGenderImage = <img className="genderImage" src={female} alt="" />;
-        
+
     }
-    else{
-        console.log("Male:",strGender);
+    else {
+        console.log("Male:", strGender);
         ConditionalGenderImage = <img className="genderImage" src={pic} alt="" />;
     }
 
@@ -43,13 +43,13 @@ const LeagueDetail = () => {
             </div>
 
             <div className="container">
-                <div className="leagueInfoDiv row d-flex align-items-center justify-content-start" style={{ borderRadius: '10px'}}>
+                <div className="leagueInfoDiv row d-flex align-items-center justify-content-start" style={{ borderRadius: '10px' }}>
                     <div className="col-md-8 leagueInfo">
-                        <h3 className ="leagueDetailStyle">League Name: {strLeague}</h3>
-                        <p className ="leagueDetailStyle"><FontAwesomeIcon icon={faMapMarker} /> Founded: {intFormedYear}</p>
-                        <p  className ="leagueDetailStyle"><FontAwesomeIcon icon={faFlag} /> Country: {strCountry}</p>
-                        <p  className ="leagueDetailStyle"><FontAwesomeIcon icon={faFutbol} /> Sport Type: {strSport}</p>
-                        <p  className ="leagueDetailStyle"><FontAwesomeIcon icon={faMars} /> Gender: {strGender}</p>
+                        <h3 className="leagueDetailStyle">League Name: {strLeague}</h3>
+                        <p className="leagueDetailStyle"><FontAwesomeIcon icon={faMapMarker} /> Founded: {intFormedYear}</p>
+                        <p className="leagueDetailStyle"><FontAwesomeIcon icon={faFlag} /> Country: {strCountry}</p>
+                        <p className="leagueDetailStyle"><FontAwesomeIcon icon={faFutbol} /> Sport Type: {strSport}</p>
+                        <p className="leagueDetailStyle"><FontAwesomeIcon icon={faMars} /> Gender: {strGender}</p>
                     </div>
                     <div className="col-md-4 leagueInfoImg">
                         {
@@ -63,7 +63,7 @@ const LeagueDetail = () => {
                 </div>
                 <div className="d-flex align-items-center justify-content-center socialDiv">
                     <div><a href={strTwitter} target="_blank"><img id="twitter" className="socialIcons" src={twitter} alt="" /></a></div>
-                    <div><a href={strFacebook} target="_blank"><img  id="facebook" className="socialIcons" src={facebook} alt="" /></a></div>
+                    <div><a href={strFacebook} target="_blank"><img id="facebook" className="socialIcons" src={facebook} alt="" /></a></div>
                     <div><a href={strYoutube} target="_blank"><img id="youTube" className="socialIcons" src={youTube} alt="" /></a></div>
                 </div>
                 <footer className="text-center footer"><small>Sports Valley © 2021. All rights not reserved</small></footer>

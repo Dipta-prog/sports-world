@@ -10,7 +10,7 @@ const Home = () => {
             .then(data => setLeagues(data.leagues))
     }, []);
 
-    
+
 
     const Imgurl = "https://www.rankuzz.com/images/4/7/0/los_estadios_de_futbol_mas_grandes_del_mundo_74_portada.webp";
     const bannerStyle = { backgroundImage: `url(${Imgurl})`, height: '62vh', backgroundRepeat: 'no-repeat', backgroundSize: '100% 450px', opacity: '1' };
