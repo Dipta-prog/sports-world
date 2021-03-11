@@ -7,14 +7,15 @@ import './League.css'
 const League = (props) => {
     const { idLeague, strLeague, strSport } = props.league;
     const [eachLeague, setEachLeague] = useState([]);
+
     useEffect(() => {
-        const url = `https://www.thesportsdb.com/api/v1/json/1/lookupleague.php?id=${props.league.idLeague}`;
+        const url = `https://www.thesportsdb.com/api/v1/json/1/lookupleague.php?id=${idLeague}`;
         fetch(url)
             .then(res => res.json())
             .then(data => {
                 setEachLeague(data.leagues[0]);
             })
-    }, [props.league.idLeague]);
+    }, [idLeague]);
     const { strBadge } = eachLeague;
 
     return (
