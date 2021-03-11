@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarker, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import './League.css'
 
 const League = (props) => {
     // console.log(props.league)
-    const { idLeague, strLeague, strLeagueAlternate, strSport } = props.league;
+    //  strLeagueAlternate,
+    const { idLeague, strLeague, strSport } = props.league;
     // console.log(idLeague)
     // const leagueStyle = {
     //     border: '1px solid purple',

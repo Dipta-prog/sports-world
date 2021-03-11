@@ -20,8 +20,10 @@ const LeagueDetail = () => {
                 setLeague(data.leagues[0]);
                 console.log(data.leagues[0]);
             })
-    }, [])
-    const { strFanart2, strBadge, strLogo, strLeague, intFormedYear, strCountry, strSport, strGender, strDescriptionEN, strFacebook, strTwitter, strYoutube } = league;
+    }, [leagueId])
+
+    //  strLogo,
+    const { strFanart2, strBadge, strLeague, intFormedYear, strCountry, strSport, strGender, strDescriptionEN, strFacebook, strTwitter, strYoutube } = league;
     const bannerStyle = { backgroundImage: `url(${strFanart2})`, height: '62vh', backgroundRepeat: 'no-repeat', backgroundSize: '100% 450px', opacity: '1' };
     const marginPadding = { margin: '1px 0 1px 5px', padding: '1px 0 1px 5px' };
 

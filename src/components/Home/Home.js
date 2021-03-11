@@ -11,6 +11,7 @@ const Home = () => {
     }, [])
     const Imgurl= "https://www.rankuzz.com/images/4/7/0/los_estadios_de_futbol_mas_grandes_del_mundo_74_portada.webp";
     const bannerStyle = { backgroundImage: `url(${Imgurl})`, height: '62vh', backgroundRepeat: 'no-repeat', backgroundSize: '100% 450px', opacity: '1' };
+    // console.log(leagues[0].idLeague)
     return (
         <div>
             {/* banner img with project name in center */}
@@ -22,7 +23,7 @@ const Home = () => {
             <div className="container">
                 <div id="leaguesGrid" className="row row-cols-1 row-cols-md-3 g-4">
                     {
-                        leagues.map(league => <League league={league}></League>)
+                        leagues.map(league => <League key={league.idLeague} league={league}></League>)
                     }
                 </div>
             </div>
