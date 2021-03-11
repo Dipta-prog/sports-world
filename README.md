@@ -8,4 +8,4 @@ Website Features:
 5. React Router is used for Each League(Id)
 6. Conditional Image rendering in League Details
 
-Website: https://keen-villani-9d5c5e.netlify.app/
+Website: https://sportsworld.netlify.app/
